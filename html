@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pizza store</title>
+		
+		<style>
+		body {
+		font-family:Verdana,Arial,Helvetica,sans-serif /* fonts in case it wont support */
+		
+		}
+		
+		#dif {
+			
+		color:red
+		}
+		
+		#waw {
+		    
+		    
+		color:blue
+		}
+		</style>
+		
+		
+	</head>
+	<body>
+	<h3 id="dif">The pizza store</h3>
+	<button id="wow">Get Pizza :D🍕</button>
+<button id="www">Eat Pizza :D🍕</button>
+
+	<h3 id="waw" >You have!</h3>
+	</body>
+</html>
+<script>
+pizzas=0
+function update(){
+    document.getElementById("waw").innerHTML="You have "+pizzas+ " pizza(s)"
+    
+}
+update()
+
+
+	document.getElementById("wow").onclick = function pizza(){
+	pizzas = pizzas + 1
+	update()
+}
+document.getElementById("www").onclick = function pizzam(){
+	
+	pizzas = pizzas + -1
+	update()
+	
+}
+
+
+
+	</script>
